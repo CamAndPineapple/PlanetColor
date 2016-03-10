@@ -11,28 +11,30 @@ module.exports = {
     'webpack/hot/dev-server',
     './src/index.js'
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   output: {
     path: path.join(__dirname, 'dist'),
-  //  publicPath: './dist',
+    //publicPath: './dist',
     filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './src/favicon.ico'
     })
   ],
   module: {
     loaders: [{
       exclude: /node_modules/,
-      test: /\.js?$/,
+      test: /\.jsx?$/,
       loader: 'babel'
-    },
-    {
+    }, {
       test: /\.(png|jpg)$/,
       loader: 'url-loader'
-    },
-    {
+    }, {
       test: /\.scss$/,
       loader: 'style!css!sass'
     }]
