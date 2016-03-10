@@ -1,22 +1,29 @@
+/* Colors */
 $planet-labs-blue: #00a9e9;
 $planet-labs-darkBlue: #1B8FCF;
 
 body {
   margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  margin-bottom: -78px;
   color: white;
+  height: 180px;
+  h1 {
+    font-size: 51px;
+    letter-spacing: 9px;
+  }
 }
 .color-output {
   position: relative;
   height: 300px;
   width: 300px;
   border-radius: 300px;
-  box-shadow: 0px 0px 33px 10px #55E07D;
+  box-shadow: 0 0 45px 7px #2C3191;
   &:before {
     content: "";
     position: absolute;
@@ -42,22 +49,26 @@ body {
   margin-bottom: 85px;
   height: 40px;
 }
+.form-group {
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #fff;
+  i {
+    color: $planet-labs-darkBlue;
+  }
+}
 .form-input {
   width: 335px;
   height: 40px;
   padding: 10px;
   font-size: 15px;
-}
-.form-search-button {
-  width: 100px;
-  border: transparent;
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #fff;
-  background-color: $planet-labs-blue;
-  transition: all 0.3s ease;
-  &:hover {
-    background-color: $planet-labs-darkBlue;
+  border: none;
+  &:focus {
+    outline: none;
   }
 }
 .shadow {
@@ -72,3 +83,10 @@ body {
   transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
 }
+
+.red { color: #F15A5A;}
+.orange { color: #F39C11;}
+.yellow { color: #F0C419;}
+.green { color: #4EBA6F;}
+.blue { color: #2D95BF;}
+.purple { color: #955BA5;}

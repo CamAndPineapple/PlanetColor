@@ -5,10 +5,10 @@ export default class SearchBar extends Component {
   constructor(props) {
     super(props)
 
-    // set default color to *blue*
+    // set default color
     this.state = {
       term: '',
-      color: 'blue'
+      color: '#D21A1A'
     }
 
     // Take method and bind to class SearchBar, then replace method with
@@ -19,26 +19,25 @@ export default class SearchBar extends Component {
   }
 
   onInputChange(e) {
-    this.setState({term: e.target.value,
-      color: e.target.value
-    });
+    this.setState({term: e.target.value, color: e.target.value});
   }
 
   onSubmitForm(e) {
     e.preventDefault();
-    if (this.state.term === '') { return; }
-    this.setState({
-      color: this.state.term,
-      term: ''
-    });
+    if (this.state.term === '') {
+      return;
+    }
+    this.setState({color: this.state.term});
   }
 
   render() {
     return (
       <div className="form-container">
         <form onSubmit={this.onSubmitForm} className="form">
-          <input className="form-input" placeholder="Search for your favorite color" onChange={this.onInputChange} value={this.state.term}/>
-            <button type="submit" className="form-search-button">Search</button>
+          <div className="form-group" id="search-container">
+            <i className="fa fa-search"></i>
+            <input className="form-input" id="search-input" placeholder="Search for your favorite color" onChange={this.onInputChange} value={this.state.term}/>
+          </div>
         </form>
         <ColorOutput color={this.state.color}/>
 
