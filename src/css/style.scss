@@ -1,5 +1,5 @@
 /* --------------------------------------------
-Custom CSS for my PlanetColors
+SASS for my PlanetColors
 
 Author:		Camden Rudisill
 License: 	MIT License (see LICENSE file)
@@ -7,23 +7,13 @@ License: 	MIT License (see LICENSE file)
 /* Colors */
 $planet-labs-blue: #00a9e9;
 $planet-labs-darkBlue: #1B8FCF;
-.red {
-  color: #F15A5A;
-}
-.orange {
-  color: #F39C11;
-}
-.yellow {
-  color: #F0C419;
-}
-.green {
-  color: #4EBA6F;
-}
-.blue {
-  color: #2D95BF;
-}
-.purple {
-  color: #955BA5;
+
+.red {color: #F15A5A; }
+.orange {color: #F39C11;}
+.yellow {color: #F0C419;}
+.green {color: #4EBA6F;}
+.blue {color: #2D95BF;}
+.purple {color: #955BA5;
 }
 body {
   margin: 0;
@@ -106,6 +96,7 @@ body {
   transform: rotateX(90deg) translateZ(-150px);
   z-index: -1;
 }
+
 /* For Mobile Devices */
 @media only screen and (max-width : 480px) {
   .header h1 {
