@@ -1,5 +1,5 @@
 {
-  "name": "planetcolors",
+  "name": "planetcolor",
   "version": "1.0.0",
   "description": "change colors via input",
   "main": "index.js",
