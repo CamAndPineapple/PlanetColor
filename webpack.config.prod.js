@@ -11,6 +11,9 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
@@ -26,7 +29,7 @@ module.exports = {
     loaders: [
       {
         exclude: /node_modules/,
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         loader: 'babel'
       },
       {
