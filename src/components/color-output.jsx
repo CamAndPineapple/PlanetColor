@@ -8,6 +8,7 @@ export default(props) => {
     <div className="color-output" style={{
       backgroundColor: props.color
     }}>
+    <h1>{props.color}</h1>
 
       <div className="shadow"></div>
     </div>

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // Add boxshadow to search bar when clicked
   searchBarInput.addEventListener('click', function() {
-    searchBarContainer.style.boxShadow = 'rgb(183, 209, 249) 0px 0px 5px 2px';
+    searchBarContainer.style.boxShadow = 'rgb(110, 115, 241) 0px 0px 5px 2px';
   }, false);
   // Remove boxshadow from searchbar when you click anywhere else on page
   document.onclick = function(e) {

@@ -33,10 +33,15 @@ body {
 }
 .color-output {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 300px;
   width: 300px;
   border-radius: 300px;
   box-shadow: 0 0 45px 7px #2C3191;
+  color: white;
+  text-shadow: 3px 2px 5px black;
   &:before {
     content: "";
     position: absolute;

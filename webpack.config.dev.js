@@ -31,7 +31,7 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel'
     }, {
-      test: /\.(png|jpg)$/,
+      test: /\.(png|jpg|ico)$/,
       loader: 'url-loader'
     }, {
       test: /\.scss$/,
